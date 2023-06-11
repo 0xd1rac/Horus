@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Jun 11 15:55:05 2023 as: nmap -v2 -n -Pn -p- -T4 -&#45;min-rate 1000 -oX ../scan_results/nmap/tcp_all_ports.xml 10.150.150.69 -->
+<nmaprun scanner="nmap" args="nmap -v2 -n -Pn -p- -T4 -&#45;min-rate 1000 -oX ../scan_results/nmap/tcp_all_ports.xml 10.150.150.69" start="1686470105" startstr="Sun Jun 11 15:55:05 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="SYN Stealth Scan" time="1686470105"/>
+<taskprogress task="SYN Stealth Scan" time="1686470136" percent="45.55" remaining="38" etc="1686470173"/>
+<taskprogress task="SYN Stealth Scan" time="1686470140" percent="52.31" remaining="32" etc="1686470172"/>
+<taskprogress task="SYN Stealth Scan" time="1686470140" percent="52.58" remaining="32" etc="1686470172"/>
+<taskend task="SYN Stealth Scan" time="1686470173" extrainfo="65535 total ports"/>
+<host starttime="1686470105" endtime="1686470173"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.150.150.69" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65521">
+<extrareasons reason="reset" count="65521" proto="tcp" ports="1-134,136-138,140-444,446-3388,3390-5039,5041-49663,49671-50416,50418-59999,60001-65535"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="50417"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="60000"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="338908" rttvar="587" to="341256"/>
+</host>
+<runstats><finished time="1686470173" timestr="Sun Jun 11 15:56:13 2023" summary="Nmap done at Sun Jun 11 15:56:13 2023; 1 IP address (1 host up) scanned in 67.88 seconds" elapsed="67.88" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
